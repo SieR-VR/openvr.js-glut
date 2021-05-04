@@ -1,0 +1,21 @@
+{
+  "name": "electron-glut",
+  "version": "0.1.15",
+  "description": "An implementation of glut in Node.js for electron",
+  "main": "./index.js",
+  "typings": "./index.d.ts",
+  "scripts": {
+    "build": "node-gyp rebuild --target=12.0.3 --arch=x64 --dist-url=https://electronjs.org/headers && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SieR-VR/electron-glut.git"
+  },
+  "keywords": [],
+  "author": "SieR-VR",
+  "license": "MIT",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "nan": "^2.14.2"
+  }
+}
