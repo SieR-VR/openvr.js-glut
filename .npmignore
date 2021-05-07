@@ -1,0 +1,24 @@
+#! .npmignore
+src
+tssrc
+lib
+.vscode
+node_modules
+
+build/binding.sln
+build/config.gypi
+build/glut.vcxproj
+build/glut.vcxproj.filters
+build/Release/obj
+build/Release/glut.exp
+build/Release/glut.lib
+build/Release/glut.pdb
+
+.gitignore
+.gitmodules
+binding.gyp
+tsconfig.json
+yarn.lock
+
+babel.config.js
+jest.config.js
