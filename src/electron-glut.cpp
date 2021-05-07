@@ -15,8 +15,11 @@ GLuint bufferTexture = 0;
 void GLUT_Init(const Nan::FunctionCallbackInfo<Value> &info)
 {
     auto context = info.GetIsolate()->GetCurrentContext();
+<<<<<<< HEAD
     int32_t width = info[0]->Int32Value(context).FromJust();
     int32_t height = info[1]->Int32Value(context).FromJust();
+=======
+>>>>>>> 18e8e7e5117e793668ecdf24ca5bdd8c8be36a9b
 
     glfwInit();
 
@@ -26,7 +29,11 @@ void GLUT_Init(const Nan::FunctionCallbackInfo<Value> &info)
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
     glfwWindowHint(GLFW_VISIBLE, GL_FALSE);
 
+<<<<<<< HEAD
     GLFWwindow* glWindow = glfwCreateWindow(width, height, "electron-glut", nullptr, nullptr);
+=======
+    GLFWwindow* glWindow = glfwCreateWindow(900, 680, "Test GL Window", nullptr, nullptr);
+>>>>>>> 18e8e7e5117e793668ecdf24ca5bdd8c8be36a9b
     glfwMakeContextCurrent(glWindow);
 
     info.GetReturnValue().Set(Nan::New<Number>((uint64_t) glWindow));
@@ -39,7 +46,10 @@ void GLUT_TextureUpdate(const Nan::FunctionCallbackInfo<Value> &info)
     Nan::TypedArrayContents<uint8_t> buf(input);
 
     int32_t width, height, channel;
+<<<<<<< HEAD
     stbi_set_flip_vertically_on_load(true);
+=======
+>>>>>>> 18e8e7e5117e793668ecdf24ca5bdd8c8be36a9b
     auto image = stbi_load_from_memory(*buf, buf.length(), &width, &height, &channel, 0);
 
     if(bufferTexture == 0) {

@@ -104,6 +104,10 @@ dist
 # TernJS port file
 .tern-port
 
+<<<<<<< HEAD
 ex.png
 .vscode
 build/
+=======
+lib/
+>>>>>>> 18e8e7e5117e793668ecdf24ca5bdd8c8be36a9b

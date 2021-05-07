@@ -36,7 +36,11 @@
                     'defines': ['WIN32_LEAN_AND_MEAN', 'VC_EXTRALEAN', 'NOMINMAX'],
                     'msvs_settings': {
                         'VCCLCompilerTool': {
+<<<<<<< HEAD
                             'AdditionalOptions': ['/Oy','/GL','/GF','/Gm-','/EHsc','/MT','/GS','/Gy','/GR-','/Gd'],
+=======
+                            'AdditionalOptions': ['/O2','/Oy','/GL','/GF','/Gm-','/EHsc','/MT','/GS','/Gy','/GR-','/Gd'],
+>>>>>>> 18e8e7e5117e793668ecdf24ca5bdd8c8be36a9b
                         },
                         'VCLinkerTool': {
                             'AdditionalOptions': ['/OPT:REF','/OPT:ICF','/LTCG', '/NODEFAULTLIB:glfw3.lib'],
